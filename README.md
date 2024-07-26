@@ -86,3 +86,12 @@ yarn run-all
 See `package.json` for additional commands.
 
 Note: this repository uses git lfs: the module should be installed before pushing changes.
+
+## Deployment
+
+Copy `.env.example` to `.env` and file the variables. Source it with `source .env`.
+
+```
+npx hardhat deploy --tags CONTRACT_NAME --network amoy
+npx hardhat etherscan-verify --network amoy --license MIT --solc-input
+```
