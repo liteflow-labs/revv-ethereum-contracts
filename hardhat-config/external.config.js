@@ -5,7 +5,7 @@ module.exports = {
   external: {
     contracts: [
       {
-        artifacts: ['artifacts_previous/v5.1', 'artifacts_previous/v4', 'artifacts_previous/v3'],
+        artifacts: ['artifacts_previous/v6.3', 'artifacts_previous/v5.1', 'artifacts_previous/v4', 'artifacts_previous/v3'],
       },
       {
         // import artifacts and deploy script from ethereum-universal-forwarder
