@@ -10,7 +10,7 @@ module.exports = async ({getNamedAccounts, deployments}) => {
     from: deployer,
     args: [
       '4400000000000000000000000000', // supply
-      '0x687C1D2dd0F422421BeF7aC2a52f50e858CAA867', // childChainManager on Amoy
+      '0xb991E39a401136348Dee93C75143B159FabF483f', // childChainManager on Amoy
       forwarderRegistry.address, // forwarderRegistry
       universalForwarder.address, // universalForwarder
     ],
