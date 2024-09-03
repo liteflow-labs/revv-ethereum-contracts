@@ -19,7 +19,7 @@ module.exports = {
       accounts: [
         process.env.DEPLOYER_PRIVATE_KEY || '0x0000000000000000000000000000000000000000000000000000000000000000', // deployer
       ],
-      gasPrice: 1500000000, // forced to 1.5 gwei
+      gasPrice: 50000000000, // forced to 50 gwei, see https://gasstation.polygon.technology/amoy
       verify: {
         etherscan: {
           apiUrl: 'https://api-amoy.polygonscan.com/',
