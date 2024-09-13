@@ -95,7 +95,7 @@ Copy `.env.example` to `.env` and file the variables. Source it with `source .en
 
 ```
 source .env
-npx hardhat deploy --network sepolia --tags REVV,REVVMotorsportShard,ForwarderRegistry
+npx hardhat deploy --network sepolia --tags REVV,ForwarderRegistry,REVVMotorsportShard
 npx hardhat etherscan-verify --network sepolia --license MIT --solc-input
 ```
 
@@ -103,6 +103,6 @@ npx hardhat etherscan-verify --network sepolia --license MIT --solc-input
 
 ```
 source .env
-npx hardhat deploy --network amoy --tags PolygonREVV,SessionsManager
+npx hardhat deploy --network amoy --tags ForwarderRegistry,UniversalForwarder,PolygonREVV,SessionsManager,REVVRacingNFT,PolygonREVVMotorsportShard
 npx hardhat etherscan-verify --network amoy --license MIT --solc-input
 ```
