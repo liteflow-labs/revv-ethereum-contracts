@@ -106,3 +106,33 @@ source .env
 npx hardhat deploy --network amoy --tags ForwarderRegistry,UniversalForwarder,PolygonREVV,SessionsManager,REVVRacingNFT,PolygonREVVMotorsportShard,REVVMotorsportShardClaim
 npx hardhat etherscan-verify --network amoy --license MIT --solc-input
 ```
+
+## Configuration
+
+### REVVMotorsportShardClaim
+
+#### Generate merkle tree
+
+First, create a csv file containing the wallets and their respective amount following the following format:
+
+```csv
+wallet_address,amount
+0x0000000000000000000000000000000000000001,1000000000000000000
+0x0000000000000000000000000000000000000002,2000000000000000000
+```
+
+Then, call the `REVVMotorsportShardClaim:generateMerkleTree` task:
+
+```bash
+npx hardhat REVVMotorsportShardClaim:generateMerkleTree --network amoy --file FILE_PATH
+```
+
+#### Set merkle root
+
+Extract the merkle root from the previous `REVVMotorsportShardClaim:generateMerkleTree` task, and pass it to the following task:
+
+```bash
+npx hardhat REVVMotorsportShardClaim:setMerkleRoot --network amoy --merkle-root MERKLE_ROOT
+```
+
+Note: the contract needs to be paused to set the merkle root and the function `setMerkleRoot` unpause the contract. You need to manually pause the contract before setting a new merkle root.
