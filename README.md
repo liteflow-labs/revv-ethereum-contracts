@@ -103,6 +103,6 @@ npx hardhat etherscan-verify --network sepolia --license MIT --solc-input
 
 ```
 source .env
-npx hardhat deploy --network amoy --tags ForwarderRegistry,UniversalForwarder,PolygonREVV,SessionsManager,REVVRacingNFT,PolygonREVVMotorsportShard
+npx hardhat deploy --network amoy --tags ForwarderRegistry,UniversalForwarder,PolygonREVV,SessionsManager,REVVRacingNFT,PolygonREVVMotorsportShard,REVVMotorsportShardClaim
 npx hardhat etherscan-verify --network amoy --license MIT --solc-input
 ```
