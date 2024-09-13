@@ -89,7 +89,7 @@ Note: this repository uses git lfs: the module should be installed before pushin
 
 ## Deployment
 
-Copy `.env.example` to `.env` and file the variables. Source it with `source .env`.
+Copy `.env.example` to `.env` and file the variables.
 
 ### Sepolia
 
