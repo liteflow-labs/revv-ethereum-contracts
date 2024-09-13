@@ -91,7 +91,18 @@ Note: this repository uses git lfs: the module should be installed before pushin
 
 Copy `.env.example` to `.env` and file the variables. Source it with `source .env`.
 
+### Sepolia
+
 ```
-npx hardhat deploy --tags CONTRACT_NAME --network amoy
+source .env
+npx hardhat deploy --network sepolia --tags REVV,REVVMotorsportShard,ForwarderRegistry
+npx hardhat etherscan-verify --network sepolia --license MIT --solc-input
+```
+
+### Amoy
+
+```
+source .env
+npx hardhat deploy --network amoy --tags PolygonREVV,SessionsManager
 npx hardhat etherscan-verify --network amoy --license MIT --solc-input
 ```
